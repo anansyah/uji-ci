@@ -45,6 +45,13 @@ providers:
     api_key: ${KUNCI_PROVIDER}
     transport: chat_completions
     default_model: deepseek-v4.1-flash
+fallback_providers:
+  - provider: bariska
+    model: glm-5.3-flash
+  - provider: bariska
+    model: qwen3.8-flash
+  - provider: bariska
+    model: auto
 CFG
 
 echo "== jembatan antrean =="
