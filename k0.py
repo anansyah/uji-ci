@@ -16,7 +16,7 @@ BASIS = "https://api.cloudflare.com/client/v4/accounts/%s/d1/database/%s/query" 
 MAKS_PERINTAH = 2000
 MAKS_HASIL = 8000
 BATCH = 3
-DETIK = 300
+DETIK = 900  # 2 Okt: tugas berat (riset/berkas) sempat mati di 300s; job runner 25 menit
 
 # --- bersihkan sisipan iklan hulu (tiruan persis buangSisipan panel) ---
 import re
