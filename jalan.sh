@@ -15,8 +15,10 @@ try:
         "Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=30) as r:
         n = json.loads(r.read())["result"][0]["results"][0]["n"]
-except Exception:
+except Exception as e:
+    print("DIAG cek gagal:", str(e)[:160])
     n = 1  # gagal cek = jalankan saja (aman: k0.py baca ulang)
+print("DIAG n =", repr(n), "uuid_len =", len(os.environ.get("CF_DB_UUID","")), "acct_len =", len(os.environ.get("CF_ACCOUNT","")))
 raise SystemExit(0 if n == 0 else 1)
 CEK
   then
