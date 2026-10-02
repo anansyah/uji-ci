@@ -104,12 +104,40 @@ def kerjakan(perintah):
     return (("GAGAL exit %d: " % proses.returncode) + keluar)[:MAKS_HASIL], "gagal"
 
 
+def probe_saldo():
+    """Mini call murah sebelum tugas besar.
+    True = saldo aman, False = saldo kurang, None = tak pasti (lanjut saja)."""
+    try:
+        cfg = open(os.path.expanduser("~/.hermes/config.yaml")).read()
+        key = re.search(r"bariska:.*?api_key:\s*(\S+)", cfg, re.S).group(1)
+        base = re.search(r"base_url:\s*(\S+)", cfg).group(1)
+        req = urllib.request.Request(
+            base.rstrip("/") + "/chat/completions",
+            data=json.dumps({"model": "deepseek-v4.1-flash",
+                             "messages": [{"role": "user", "content": "ok"}],
+                             "max_tokens": 3}).encode(),
+            headers={"Authorization": "Bearer " + key,
+                     "Content-Type": "application/json",
+                     "User-Agent": "curl/8.5.0"})
+        urllib.request.urlopen(req, timeout=45).read()
+        return True
+    except urllib.error.HTTPError as e:
+        teks = e.read().decode()[:400]
+        return False if "insufficient balance" in teks else None
+    except Exception:
+        return None  # jaringan gagal = jangan blokir; k0.py tetap jalan
+
+
 def main():
     if not (AKUN and TOKEN and DBID):
         print("KONFIG KURANG: CF_ACCOUNT/CF_TOKEN/CF_DB_UUID")
         return 2
     try:
-        antri = q("SELECT id, perintah FROM agen_perintah "
+        q("ALTER TABLE agen_perintah ADD COLUMN coba INTEGER DEFAULT 0")
+    except Exception:
+        pass  # kolom sudah ada
+    try:
+        antri = q("SELECT id, perintah, COALESCE(coba, 0) AS coba FROM agen_perintah "
                   "WHERE status='menunggu' ORDER BY id LIMIT %d" % BATCH)
     except Exception as e:
         print("GAGAL BACA ANTREAN: %s" % e)
@@ -122,7 +150,29 @@ def main():
                   "WHERE id=? AND status='menunggu' RETURNING id", [baris["id"]])
         if not klaim:
             continue
+        coba = int(baris.get("coba") or 0)
+        # pra-periksa saldo: tahan sebelum bakar konteks besar
+        if probe_saldo() is False:
+            if coba < 3:
+                coba += 1
+                q("UPDATE agen_perintah SET status='menunggu', coba=?, hasil=?, selesai=NULL WHERE id=?",
+                  [coba, "SALDO KURANG (deteksi dini) — diantre ulang otomatis (coba ke-%d) pada %s"
+                         % (coba, cap_stempel()), baris["id"]])
+                print("baris %s -> antre ulang (saldo kurang dini, coba ke-%d)" % (baris["id"], coba))
+            else:
+                q("UPDATE agen_perintah SET status='gagal', hasil=?, selesai=? WHERE id=?",
+                  ["GAGAL: saldo kurang — 3x diantre ulang tetap ditolak; ulangi nanti.", cap_stempel(), baris["id"]])
+                print("baris %s -> gagal (saldo, antrean ulang habis)" % baris["id"])
+            continue
         hasil, status = kerjakan((baris.get("perintah") or "").strip())
+        if status == "gagal" and "insufficient balance" in hasil and coba < 3:
+            # saldo kehabisan di tengah jalan: antre ulang otomatis, jangan hilang
+            coba += 1
+            q("UPDATE agen_perintah SET status='menunggu', coba=?, hasil=?, selesai=NULL WHERE id=?",
+              [coba, "SALDO KURANG — diantre ulang otomatis (coba ke-%d) pada %s"
+                     % (coba, cap_stempel()), baris["id"]])
+            print("baris %s -> antre ulang (saldo kurang, coba ke-%d)" % (baris["id"], coba))
+            continue
         q("UPDATE agen_perintah SET status=?, hasil=?, selesai=? WHERE id=?",
           [status, hasil, cap_stempel(), baris["id"]])
         print("baris %s -> %s" % (baris["id"], status))
