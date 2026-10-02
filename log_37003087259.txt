@@ -1,0 +1,681 @@
+kerja	Set up job	﻿2026-10-02T11:49:08.0823585Z Current runner version: '2.337.0'
+kerja	Set up job	2026-10-02T11:49:08.0850784Z ##[group]Runner Image Provisioner
+kerja	Set up job	2026-10-02T11:49:08.0851635Z Hosted Compute Agent
+kerja	Set up job	2026-10-02T11:49:08.0852433Z Version: 20260901.588
+kerja	Set up job	2026-10-02T11:49:08.0853158Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+kerja	Set up job	2026-10-02T11:49:08.0853935Z Build Date: 2026-09-01T19:56:44Z
+kerja	Set up job	2026-10-02T11:49:08.0854656Z Worker ID: {56efb9a0-46d2-427b-a5ac-28f5f522e9af}
+kerja	Set up job	2026-10-02T11:49:08.0855399Z Azure Region: northcentralus
+kerja	Set up job	2026-10-02T11:49:08.0856076Z ##[endgroup]
+kerja	Set up job	2026-10-02T11:49:08.0858004Z ##[group]Operating System
+kerja	Set up job	2026-10-02T11:49:08.0858822Z Ubuntu
+kerja	Set up job	2026-10-02T11:49:08.0859388Z 24.04.5
+kerja	Set up job	2026-10-02T11:49:08.0859927Z LTS
+kerja	Set up job	2026-10-02T11:49:08.0860513Z ##[endgroup]
+kerja	Set up job	2026-10-02T11:49:08.0861141Z ##[group]Runner Image
+kerja	Set up job	2026-10-02T11:49:08.0861749Z Image: ubuntu-24.04
+kerja	Set up job	2026-10-02T11:49:08.0862401Z Version: 20260927.320.1
+kerja	Set up job	2026-10-02T11:49:08.0863487Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+kerja	Set up job	2026-10-02T11:49:08.0865386Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+kerja	Set up job	2026-10-02T11:49:08.0866377Z ##[endgroup]
+kerja	Set up job	2026-10-02T11:49:08.0867818Z ##[group]GITHUB_TOKEN Permissions
+kerja	Set up job	2026-10-02T11:49:08.0870439Z Contents: read
+kerja	Set up job	2026-10-02T11:49:08.0871242Z Metadata: read
+kerja	Set up job	2026-10-02T11:49:08.0871837Z Packages: read
+kerja	Set up job	2026-10-02T11:49:08.0872515Z ##[endgroup]
+kerja	Set up job	2026-10-02T11:49:08.0874590Z Secret source: Actions
+kerja	Set up job	2026-10-02T11:49:08.0875622Z Cache mode: write
+kerja	Set up job	2026-10-02T11:49:08.0876642Z Prepare workflow directory
+kerja	Set up job	2026-10-02T11:49:08.1211252Z Prepare all required actions
+kerja	Set up job	2026-10-02T11:49:08.1259232Z Getting action download info
+kerja	Set up job	2026-10-02T11:49:08.3797938Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+kerja	Set up job	2026-10-02T11:49:08.5815365Z Complete job name: kerja
+kerja	Run actions/checkout@v4	﻿2026-10-02T11:49:08.6643092Z ##[group]Run actions/checkout@v4
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6643922Z with:
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6644589Z   repository: anansyah/uji-ci
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6648625Z   token: ***
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6649080Z   ssh-strict: true
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6649530Z   ssh-user: git
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6649985Z   persist-credentials: true
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6650479Z   clean: true
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6650927Z   sparse-checkout-cone-mode: true
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6651445Z   fetch-depth: 1
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6651903Z   fetch-tags: false
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6652355Z   show-progress: true
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6652804Z   lfs: false
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6653217Z   submodules: false
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6653674Z   set-safe-directory: true
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6654180Z   allow-unsafe-pr-checkout: false
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.6654977Z ##[endgroup]
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7679639Z Syncing repository: anansyah/uji-ci
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7681960Z ##[group]Getting Git version info
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7682767Z Working directory is '/home/runner/work/uji-ci/uji-ci'
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7684163Z [command]/usr/bin/git version
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7728294Z git version 2.55.0
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7748453Z ##[endgroup]
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7763642Z Temporarily overriding HOME='/home/runner/work/_temp/a47c4f18-103b-4689-b1f2-e31731721908' before making global git config changes
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7766048Z Adding repository directory to the temporary git global config as a safe directory
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7768613Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/uji-ci/uji-ci
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7816386Z Deleting the contents of '/home/runner/work/uji-ci/uji-ci'
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7824782Z ##[group]Initializing the repository
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7832176Z [command]/usr/bin/git init /home/runner/work/uji-ci/uji-ci
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7898421Z hint: Using 'master' as the name for the initial branch. This default branch name
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7900066Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7901555Z hint: to use in all of your new repositories, which will suppress this warning,
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7902730Z hint: call:
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7903972Z hint:
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7904755Z hint: 	git config --global init.defaultBranch <name>
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7905747Z hint:
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7906659Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7908570Z hint: 'development'. The just-created branch can be renamed via this command:
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7909753Z hint:
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7910421Z hint: 	git branch -m <name>
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7911182Z hint:
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7912182Z hint: Disable this message with "git config set advice.defaultBranchName false"
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7913756Z Initialized empty Git repository in /home/runner/work/uji-ci/uji-ci/.git/
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7918835Z [command]/usr/bin/git remote add origin https://github.com/anansyah/uji-ci
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7963974Z ##[endgroup]
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7965298Z ##[group]Disabling automatic garbage collection
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.7967894Z [command]/usr/bin/git config --local gc.auto 0
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.8002247Z ##[endgroup]
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.8003205Z ##[group]Setting up auth
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.8009747Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.8044226Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.8376428Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.8418585Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.8668363Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.8706001Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.8945068Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.8987982Z ##[endgroup]
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.8988891Z ##[group]Fetching the repository
+kerja	Run actions/checkout@v4	2026-10-02T11:49:08.8998008Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +361e2d8dc81ca862d9e9f2038417abdab7f73b73:refs/remotes/origin/master
+kerja	Run actions/checkout@v4	2026-10-02T11:49:09.1853593Z From https://github.com/anansyah/uji-ci
+kerja	Run actions/checkout@v4	2026-10-02T11:49:09.1855246Z  * [new ref]         361e2d8dc81ca862d9e9f2038417abdab7f73b73 -> origin/master
+kerja	Run actions/checkout@v4	2026-10-02T11:49:09.1859394Z ##[endgroup]
+kerja	Run actions/checkout@v4	2026-10-02T11:49:09.1860720Z ##[group]Determining the checkout info
+kerja	Run actions/checkout@v4	2026-10-02T11:49:09.1862833Z ##[endgroup]
+kerja	Run actions/checkout@v4	2026-10-02T11:49:09.1869228Z [command]/usr/bin/git sparse-checkout disable
+kerja	Run actions/checkout@v4	2026-10-02T11:49:09.1921515Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+kerja	Run actions/checkout@v4	2026-10-02T11:49:09.1956364Z ##[group]Checking out the ref
+kerja	Run actions/checkout@v4	2026-10-02T11:49:09.1960964Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+kerja	Run actions/checkout@v4	2026-10-02T11:49:09.2018466Z Reset branch 'master'
+kerja	Run actions/checkout@v4	2026-10-02T11:49:09.2023804Z branch 'master' set up to track 'origin/master'.
+kerja	Run actions/checkout@v4	2026-10-02T11:49:09.2028991Z ##[endgroup]
+kerja	Run actions/checkout@v4	2026-10-02T11:49:09.2071520Z [command]/usr/bin/git log -1 --format=%H
+kerja	Run actions/checkout@v4	2026-10-02T11:49:09.2100217Z 361e2d8dc81ca862d9e9f2038417abdab7f73b73
+kerja	langkah	﻿2026-10-02T11:49:09.2339322Z ##[group]Run bash tes.sh
+kerja	langkah	2026-10-02T11:49:09.2340010Z [36;1mbash tes.sh[0m
+kerja	langkah	2026-10-02T11:49:09.2569288Z shell: /usr/bin/bash -e {0}
+kerja	langkah	2026-10-02T11:49:09.2569942Z ##[endgroup]
+kerja	langkah	2026-10-02T11:49:09.2697924Z == sistem ==
+kerja	langkah	2026-10-02T11:49:09.2708106Z Linux runnervm8df0l 6.17.0-1022-azure #22-Ubuntu SMP Mon Jul 27 17:24:03 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+kerja	langkah	2026-10-02T11:49:09.2720136Z Python 3.12.3
+kerja	langkah	2026-10-02T11:49:09.3133204Z v22.23.3
+kerja	langkah	2026-10-02T11:49:09.3149762Z == pasang (mode CI non-interaktif) ==
+kerja	langkah	2026-10-02T11:49:09.4375101Z 
+kerja	langkah	2026-10-02T11:49:09.4376859Z ┌─────────────────────────────────────────────────────────┐
+kerja	langkah	2026-10-02T11:49:09.4379051Z │             ☤ Hermes Agent Installer                    │
+kerja	langkah	2026-10-02T11:49:09.4380389Z ├─────────────────────────────────────────────────────────┤
+kerja	langkah	2026-10-02T11:49:09.4381273Z │  An open source AI agent by Nous Research.              │
+kerja	langkah	2026-10-02T11:49:09.4382104Z └─────────────────────────────────────────────────────────┘
+kerja	langkah	2026-10-02T11:49:09.4382612Z 
+kerja	langkah	2026-10-02T11:49:09.4440014Z ✓ prerequisites ok (git, curl)
+kerja	langkah	2026-10-02T11:49:09.4503304Z → Cloning https://github.com/NousResearch/hermes-agent.git (main) into /home/runner/.hermes/hermes-agent
+kerja	langkah	2026-10-02T11:49:09.4515502Z Cloning into '/home/runner/.hermes/.hermes-clone-XliYYZ/tree'...
+kerja	langkah	2026-10-02T11:49:23.3626771Z Updating files:   0% (1/17018)
+kerja	langkah	2026-10-02T11:49:23.3833224Z Updating files:   1% (171/17018)
+kerja	langkah	2026-10-02T11:49:23.4081556Z Updating files:   2% (341/17018)
+kerja	langkah	2026-10-02T11:49:23.4234081Z Updating files:   3% (511/17018)
+kerja	langkah	2026-10-02T11:49:23.4402053Z Updating files:   4% (681/17018)
+kerja	langkah	2026-10-02T11:49:23.4519019Z Updating files:   5% (851/17018)
+kerja	langkah	2026-10-02T11:49:23.4627116Z Updating files:   6% (1022/17018)
+kerja	langkah	2026-10-02T11:49:23.4955377Z Updating files:   7% (1192/17018)
+kerja	langkah	2026-10-02T11:49:23.5069526Z Updating files:   8% (1362/17018)
+kerja	langkah	2026-10-02T11:49:23.5207075Z Updating files:   9% (1532/17018)
+kerja	langkah	2026-10-02T11:49:23.5334921Z Updating files:  10% (1702/17018)
+kerja	langkah	2026-10-02T11:49:23.5477999Z Updating files:  11% (1872/17018)
+kerja	langkah	2026-10-02T11:49:23.5615331Z Updating files:  12% (2043/17018)
+kerja	langkah	2026-10-02T11:49:23.5745535Z Updating files:  13% (2213/17018)
+kerja	langkah	2026-10-02T11:49:23.5855323Z Updating files:  14% (2383/17018)
+kerja	langkah	2026-10-02T11:49:23.5961961Z Updating files:  15% (2553/17018)
+kerja	langkah	2026-10-02T11:49:23.6077216Z Updating files:  16% (2723/17018)
+kerja	langkah	2026-10-02T11:49:23.6179671Z Updating files:  17% (2894/17018)
+kerja	langkah	2026-10-02T11:49:23.6380278Z Updating files:  18% (3064/17018)
+kerja	langkah	2026-10-02T11:49:23.6485918Z Updating files:  19% (3234/17018)
+kerja	langkah	2026-10-02T11:49:23.6601282Z Updating files:  20% (3404/17018)
+kerja	langkah	2026-10-02T11:49:23.6750010Z Updating files:  21% (3574/17018)
+kerja	langkah	2026-10-02T11:49:23.6871590Z Updating files:  22% (3744/17018)
+kerja	langkah	2026-10-02T11:49:23.7017197Z Updating files:  23% (3915/17018)
+kerja	langkah	2026-10-02T11:49:23.7156719Z Updating files:  24% (4085/17018)
+kerja	langkah	2026-10-02T11:49:23.7213708Z Updating files:  25% (4255/17018)
+kerja	langkah	2026-10-02T11:49:23.7271705Z Updating files:  26% (4425/17018)
+kerja	langkah	2026-10-02T11:49:23.7342136Z Updating files:  27% (4595/17018)
+kerja	langkah	2026-10-02T11:49:23.7404363Z Updating files:  28% (4766/17018)
+kerja	langkah	2026-10-02T11:49:23.7474080Z Updating files:  29% (4936/17018)
+kerja	langkah	2026-10-02T11:49:23.7532968Z Updating files:  30% (5106/17018)
+kerja	langkah	2026-10-02T11:49:23.7600007Z Updating files:  31% (5276/17018)
+kerja	langkah	2026-10-02T11:49:23.7659334Z Updating files:  32% (5446/17018)
+kerja	langkah	2026-10-02T11:49:23.7720314Z Updating files:  33% (5616/17018)
+kerja	langkah	2026-10-02T11:49:23.7828810Z Updating files:  34% (5787/17018)
+kerja	langkah	2026-10-02T11:49:23.7940316Z Updating files:  35% (5957/17018)
+kerja	langkah	2026-10-02T11:49:23.8189934Z Updating files:  36% (6127/17018)
+kerja	langkah	2026-10-02T11:49:23.8423498Z Updating files:  37% (6297/17018)
+kerja	langkah	2026-10-02T11:49:23.8653797Z Updating files:  38% (6467/17018)
+kerja	langkah	2026-10-02T11:49:23.8834345Z Updating files:  39% (6638/17018)
+kerja	langkah	2026-10-02T11:49:23.9004632Z Updating files:  40% (6808/17018)
+kerja	langkah	2026-10-02T11:49:23.9063673Z Updating files:  41% (6978/17018)
+kerja	langkah	2026-10-02T11:49:23.9440920Z Updating files:  41% (7019/17018)
+kerja	langkah	2026-10-02T11:49:23.9579296Z Updating files:  42% (7148/17018)
+kerja	langkah	2026-10-02T11:49:23.9721548Z Updating files:  43% (7318/17018)
+kerja	langkah	2026-10-02T11:49:23.9915341Z Updating files:  44% (7488/17018)
+kerja	langkah	2026-10-02T11:49:24.0174408Z Updating files:  45% (7659/17018)
+kerja	langkah	2026-10-02T11:49:24.0310436Z Updating files:  46% (7829/17018)
+kerja	langkah	2026-10-02T11:49:24.0381949Z Updating files:  47% (7999/17018)
+kerja	langkah	2026-10-02T11:49:24.0467807Z Updating files:  48% (8169/17018)
+kerja	langkah	2026-10-02T11:49:24.0649778Z Updating files:  49% (8339/17018)
+kerja	langkah	2026-10-02T11:49:24.0858804Z Updating files:  50% (8509/17018)
+kerja	langkah	2026-10-02T11:49:24.1013336Z Updating files:  51% (8680/17018)
+kerja	langkah	2026-10-02T11:49:24.1149569Z Updating files:  52% (8850/17018)
+kerja	langkah	2026-10-02T11:49:24.1313596Z Updating files:  53% (9020/17018)
+kerja	langkah	2026-10-02T11:49:24.1435952Z Updating files:  54% (9190/17018)
+kerja	langkah	2026-10-02T11:49:24.1565241Z Updating files:  55% (9360/17018)
+kerja	langkah	2026-10-02T11:49:24.1699264Z Updating files:  56% (9531/17018)
+kerja	langkah	2026-10-02T11:49:24.1817681Z Updating files:  57% (9701/17018)
+kerja	langkah	2026-10-02T11:49:24.1942235Z Updating files:  58% (9871/17018)
+kerja	langkah	2026-10-02T11:49:24.2074309Z Updating files:  59% (10041/17018)
+kerja	langkah	2026-10-02T11:49:24.2195592Z Updating files:  60% (10211/17018)
+kerja	langkah	2026-10-02T11:49:24.2318278Z Updating files:  61% (10381/17018)
+kerja	langkah	2026-10-02T11:49:24.2452010Z Updating files:  62% (10552/17018)
+kerja	langkah	2026-10-02T11:49:24.2587756Z Updating files:  63% (10722/17018)
+kerja	langkah	2026-10-02T11:49:24.2712268Z Updating files:  64% (10892/17018)
+kerja	langkah	2026-10-02T11:49:24.2836990Z Updating files:  65% (11062/17018)
+kerja	langkah	2026-10-02T11:49:24.2957822Z Updating files:  66% (11232/17018)
+kerja	langkah	2026-10-02T11:49:24.3092264Z Updating files:  67% (11403/17018)
+kerja	langkah	2026-10-02T11:49:24.3218953Z Updating files:  68% (11573/17018)
+kerja	langkah	2026-10-02T11:49:24.3339414Z Updating files:  69% (11743/17018)
+kerja	langkah	2026-10-02T11:49:24.3449194Z Updating files:  70% (11913/17018)
+kerja	langkah	2026-10-02T11:49:24.3569232Z Updating files:  71% (12083/17018)
+kerja	langkah	2026-10-02T11:49:24.3691653Z Updating files:  72% (12253/17018)
+kerja	langkah	2026-10-02T11:49:24.3812420Z Updating files:  73% (12424/17018)
+kerja	langkah	2026-10-02T11:49:24.3940826Z Updating files:  74% (12594/17018)
+kerja	langkah	2026-10-02T11:49:24.4056528Z Updating files:  75% (12764/17018)
+kerja	langkah	2026-10-02T11:49:24.4169229Z Updating files:  76% (12934/17018)
+kerja	langkah	2026-10-02T11:49:24.4301633Z Updating files:  77% (13104/17018)
+kerja	langkah	2026-10-02T11:49:24.4422082Z Updating files:  78% (13275/17018)
+kerja	langkah	2026-10-02T11:49:24.4543646Z Updating files:  79% (13445/17018)
+kerja	langkah	2026-10-02T11:49:24.4647199Z Updating files:  80% (13615/17018)
+kerja	langkah	2026-10-02T11:49:24.4762800Z Updating files:  81% (13785/17018)
+kerja	langkah	2026-10-02T11:49:24.4890832Z Updating files:  82% (13955/17018)
+kerja	langkah	2026-10-02T11:49:24.5020290Z Updating files:  83% (14125/17018)
+kerja	langkah	2026-10-02T11:49:24.5148429Z Updating files:  84% (14296/17018)
+kerja	langkah	2026-10-02T11:49:24.5279662Z Updating files:  85% (14466/17018)
+kerja	langkah	2026-10-02T11:49:24.5403743Z Updating files:  86% (14636/17018)
+kerja	langkah	2026-10-02T11:49:24.5542435Z Updating files:  87% (14806/17018)
+kerja	langkah	2026-10-02T11:49:24.5715544Z Updating files:  88% (14976/17018)
+kerja	langkah	2026-10-02T11:49:24.5955403Z Updating files:  89% (15147/17018)
+kerja	langkah	2026-10-02T11:49:24.6145177Z Updating files:  90% (15317/17018)
+kerja	langkah	2026-10-02T11:49:24.6262447Z Updating files:  91% (15487/17018)
+kerja	langkah	2026-10-02T11:49:24.6377415Z Updating files:  92% (15657/17018)
+kerja	langkah	2026-10-02T11:49:24.6535336Z Updating files:  93% (15827/17018)
+kerja	langkah	2026-10-02T11:49:24.6671253Z Updating files:  94% (15997/17018)
+kerja	langkah	2026-10-02T11:49:24.6886830Z Updating files:  95% (16168/17018)
+kerja	langkah	2026-10-02T11:49:24.7099453Z Updating files:  96% (16338/17018)
+kerja	langkah	2026-10-02T11:49:24.7271187Z Updating files:  97% (16508/17018)
+kerja	langkah	2026-10-02T11:49:24.7464021Z Updating files:  98% (16678/17018)
+kerja	langkah	2026-10-02T11:49:24.7840991Z Updating files:  99% (16848/17018)
+kerja	langkah	2026-10-02T11:49:24.7841916Z Updating files: 100% (17018/17018)
+kerja	langkah	2026-10-02T11:49:24.7842474Z Updating files: 100% (17018/17018), done.
+kerja	langkah	2026-10-02T11:49:24.8417198Z ✓ Hermes Agent cloned
+kerja	langkah	2026-10-02T11:49:24.8480196Z → Downloading uv 0.12.3 (linux-x64)
+kerja	langkah	2026-10-02T11:49:25.4910567Z ✓ uv ready (uv 0.12.3 (x86_64-unknown-linux-gnu))
+kerja	langkah	2026-10-02T11:49:25.5961744Z → Downloading Python 3.14
+kerja	langkah	2026-10-02T11:49:25.8942652Z Downloading cpython-3.14.7-linux-x86_64-gnu (download) (34.3MiB)
+kerja	langkah	2026-10-02T11:49:26.8131686Z  Downloaded cpython-3.14.7-linux-x86_64-gnu (download)
+kerja	langkah	2026-10-02T11:49:26.8233788Z Installed Python 3.14.7 in 1.22s
+kerja	langkah	2026-10-02T11:49:26.8234346Z  + cpython-3.14.7-linux-x86_64-gnu
+kerja	langkah	2026-10-02T11:49:27.0172756Z ✓ bootstrap Python ready; PM prepares the dependency environment
+kerja	langkah	2026-10-02T11:49:27.0333875Z ✓ uv ready (uv 0.12.3 (x86_64-unknown-linux-gnu))
+kerja	langkah	2026-10-02T11:49:27.0480471Z → Installing dependencies (hash-verified via uv.lock)
+kerja	langkah	2026-10-02T11:49:27.5691648Z Preparing the isolated Hermes runtime…
+kerja	langkah	2026-10-02T11:49:27.6218950Z Using CPython 3.14.7 interpreter at: /home/runner/.local/share/uv/python/cpython-3.14-linux-x86_64-gnu/bin/python3.14
+kerja	langkah	2026-10-02T11:49:27.6219996Z Creating virtual environment at: 803389fc2e404db08e0ec1b230b3c9d6
+kerja	langkah	2026-10-02T11:49:27.6220464Z Activate with: 803389fc2e404db08e0ec1b230b3c9d6/bin/activate
+kerja	langkah	2026-10-02T11:49:27.7809210Z Resolved 5 packages in 0.67ms
+kerja	langkah	2026-10-02T11:49:27.8328545Z Prepared 4 packages in 79ms
+kerja	langkah	2026-10-02T11:49:27.8337845Z Installed 4 packages in 2ms
+kerja	langkah	2026-10-02T11:49:27.9821713Z Bytecode compiled 57 files in 123ms
+kerja	langkah	2026-10-02T11:49:27.9822241Z  + packaging==26.0
+kerja	langkah	2026-10-02T11:49:27.9822574Z  + ruamel-yaml==0.18.16
+kerja	langkah	2026-10-02T11:49:27.9822904Z  + tomli-w==1.2.0
+kerja	langkah	2026-10-02T11:49:27.9823280Z  + truststore==0.10.4
+kerja	langkah	2026-10-02T11:49:28.4405738Z   ffmpeg:   3.3%  4.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.4489092Z   ffmpeg:   6.6%  8.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.4552422Z   ffmpeg:   9.9%  12.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.4646600Z   ffmpeg:  13.3%  16.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.4741194Z   ffmpeg:  17.4%  21.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.4813347Z   ffmpeg:  20.7%  25.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.4866518Z   ffmpeg:  24.0%  29.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.4966224Z   ffmpeg:  28.2%  34.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5005234Z   ffmpeg:  31.5%  38.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5075251Z   ffmpeg:  34.8%  42.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5154849Z   ffmpeg:  38.1%  46.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5180412Z   ffmpeg:  41.4%  50.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5275666Z   ffmpeg:  44.7%  54.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5339485Z   ffmpeg:  48.0%  58.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5400279Z   ffmpeg:  51.4%  62.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5475129Z   ffmpeg:  54.7%  66.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5532809Z   ffmpeg:  58.0%  70.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5593411Z   ffmpeg:  61.3%  74.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5645914Z   ffmpeg:  64.6%  78.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5736209Z   ffmpeg:  67.9%  82.0 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5776415Z   ffmpeg:  71.3%  86.1 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5838982Z   ffmpeg:  74.6%  90.1 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5895156Z   ffmpeg:  78.1%  94.3 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5939309Z   ffmpeg:  81.4%  98.3 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.5990644Z   ffmpeg:  84.7%  102.3 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.6026611Z   ffmpeg:  88.1%  106.4 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.6072601Z   ffmpeg:  91.5%  110.5 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.6128564Z   ffmpeg:  94.8%  114.5 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.6175893Z   ffmpeg:  98.2%  118.6 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.6221933Z   ffmpeg: 100.0%  120.7 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.9825441Z   ffmpeg: 100.0%  120.7 MiB / 120.7 MiB
+kerja	langkah	2026-10-02T11:49:28.9825985Z   ffmpeg: unpacking
+kerja	langkah	2026-10-02T11:49:34.9027828Z ✓ ffmpeg
+kerja	langkah	2026-10-02T11:49:35.0099872Z   node:  12.5%  4.0 MiB / 32.0 MiB
+kerja	langkah	2026-10-02T11:49:35.0176151Z   node:  28.1%  9.0 MiB / 32.0 MiB
+kerja	langkah	2026-10-02T11:49:35.0262837Z   node:  43.8%  14.0 MiB / 32.0 MiB
+kerja	langkah	2026-10-02T11:49:35.0326144Z   node:  59.4%  19.0 MiB / 32.0 MiB
+kerja	langkah	2026-10-02T11:49:35.1315786Z   node:  75.0%  24.0 MiB / 32.0 MiB
+kerja	langkah	2026-10-02T11:49:35.1973233Z   node:  90.6%  29.0 MiB / 32.0 MiB
+kerja	langkah	2026-10-02T11:49:35.2012368Z   node: 100.0%  32.0 MiB / 32.0 MiB
+kerja	langkah	2026-10-02T11:49:35.2529285Z   node: 100.0%  32.0 MiB / 32.0 MiB
+kerja	langkah	2026-10-02T11:49:35.2529825Z   node: unpacking
+kerja	langkah	2026-10-02T11:49:38.3586451Z ✓ node
+kerja	langkah	2026-10-02T11:49:38.8975656Z   npm: 100.0%  2.9 MiB / 2.9 MiB
+kerja	langkah	2026-10-02T11:49:38.9042663Z   npm: 100.0%  2.9 MiB / 2.9 MiB
+kerja	langkah	2026-10-02T11:49:38.9043600Z   npm: unpacking
+kerja	langkah	2026-10-02T11:49:41.8276341Z ✓ npm
+kerja	langkah	2026-10-02T11:49:42.0796288Z   python:   3.3%  4.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.0864608Z   python:   6.7%  8.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.0944316Z   python:  10.0%  12.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.1001058Z   python:  13.4%  16.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.1064705Z   python:  16.7%  20.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.1122809Z   python:  20.0%  24.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.1200004Z   python:  23.4%  28.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.1258517Z   python:  26.7%  32.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.1338822Z   python:  30.9%  37.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.1393300Z   python:  34.2%  41.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.1484475Z   python:  37.6%  45.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.1513535Z   python:  40.9%  49.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.1608455Z   python:  44.3%  53.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.1642118Z   python:  47.6%  57.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.1700948Z   python:  51.0%  61.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.1769051Z   python:  54.3%  65.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.1842143Z   python:  58.5%  70.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.2022189Z   python:  62.6%  75.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.2048422Z   python:  66.0%  79.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.2078684Z   python:  69.3%  83.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.2156107Z   python:  73.5%  88.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.2216785Z   python:  76.9%  92.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.2271716Z   python:  80.2%  96.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.2348494Z   python:  84.3%  101.0 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.2421842Z   python:  88.5%  105.9 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.2447149Z   python:  91.8%  109.9 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.2516881Z   python:  95.9%  114.8 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.2630982Z   python: 100.0%  119.7 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.5875449Z   python: 100.0%  119.7 MiB / 119.7 MiB
+kerja	langkah	2026-10-02T11:49:42.5875999Z   python: unpacking
+kerja	langkah	2026-10-02T11:49:45.2132172Z ✓ python
+kerja	langkah	2026-10-02T11:49:46.2598900Z   ripgrep: 100.0%  2.2 MiB / 2.2 MiB
+kerja	langkah	2026-10-02T11:49:46.2654215Z   ripgrep: 100.0%  2.2 MiB / 2.2 MiB
+kerja	langkah	2026-10-02T11:49:46.2655079Z   ripgrep: unpacking
+kerja	langkah	2026-10-02T11:49:46.3092478Z ✓ ripgrep
+kerja	langkah	2026-10-02T11:49:47.7234728Z Using CPython 3.14.7 interpreter at: /home/runner/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/python3
+kerja	langkah	2026-10-02T11:49:47.7235393Z Creating virtual environment at: venv
+kerja	langkah	2026-10-02T11:49:47.7235688Z Activate with: venv/bin/activate
+kerja	langkah	2026-10-02T11:49:48.1995557Z    Building hermes-agent @ file:///home/runner/.hermes/installs/096885f0e90d3dd1/environments/a423f386a2bc4120b925ca18dd20d567/workspace
+kerja	langkah	2026-10-02T11:49:48.2004085Z DEBUG Resolving build requirements
+kerja	langkah	2026-10-02T11:49:48.2495853Z Downloading pygments (1.2MiB)
+kerja	langkah	2026-10-02T11:49:48.2496400Z Downloading openai (1.1MiB)
+kerja	langkah	2026-10-02T11:49:48.2496902Z Downloading firecrawl-anydoc (3.3MiB)
+kerja	langkah	2026-10-02T11:49:48.2497537Z Downloading resvg-py (1.3MiB)
+kerja	langkah	2026-10-02T11:49:48.2497962Z Downloading pillow-heif (5.4MiB)
+kerja	langkah	2026-10-02T11:49:48.2498404Z Downloading cryptography (4.5MiB)
+kerja	langkah	2026-10-02T11:49:48.2498848Z Downloading pydantic-core (2.0MiB)
+kerja	langkah	2026-10-02T11:49:48.2499284Z Downloading nemo-relay (9.4MiB)
+kerja	langkah	2026-10-02T11:49:48.2499697Z Downloading pillow (6.6MiB)
+kerja	langkah	2026-10-02T11:49:48.2500151Z Downloading google-api-python-client (14.3MiB)
+kerja	langkah	2026-10-02T11:49:48.2500660Z Downloading aiohttp (1.7MiB)
+kerja	langkah	2026-10-02T11:49:48.2501030Z Downloading uvloop (4.1MiB)
+kerja	langkah	2026-10-02T11:49:48.7507089Z  Downloaded resvg-py
+kerja	langkah	2026-10-02T11:49:48.8510037Z  Downloaded pydantic-core
+kerja	langkah	2026-10-02T11:49:48.9513168Z  Downloaded aiohttp
+kerja	langkah	2026-10-02T11:49:48.9513870Z  Downloaded firecrawl-anydoc
+kerja	langkah	2026-10-02T11:49:49.0515590Z  Downloaded pillow-heif
+kerja	langkah	2026-10-02T11:49:49.1017876Z  Downloaded pillow
+kerja	langkah	2026-10-02T11:49:49.1018318Z  Downloaded uvloop
+kerja	langkah	2026-10-02T11:49:49.1518955Z  Downloaded nemo-relay
+kerja	langkah	2026-10-02T11:49:49.1519497Z  Downloaded cryptography
+kerja	langkah	2026-10-02T11:49:49.2020789Z  Downloaded pygments
+kerja	langkah	2026-10-02T11:49:49.3023808Z DEBUG Creating PEP 517 build environment
+kerja	langkah	2026-10-02T11:49:49.3024860Z DEBUG Calling `setuptools.build_meta.get_requires_for_build_editable()`
+kerja	langkah	2026-10-02T11:49:49.3525180Z  Downloaded google-api-python-client
+kerja	langkah	2026-10-02T11:49:49.4026457Z  Downloaded openai
+kerja	langkah	2026-10-02T11:49:50.1545927Z DEBUG running egg_info
+kerja	langkah	2026-10-02T11:49:50.1546424Z DEBUG creating hermes_agent.egg-info
+kerja	langkah	2026-10-02T11:49:50.1547125Z DEBUG writing hermes_agent.egg-info/PKG-INFO
+kerja	langkah	2026-10-02T11:49:50.1547794Z DEBUG writing dependency_links to hermes_agent.egg-info/dependency_links.txt
+kerja	langkah	2026-10-02T11:49:50.1548303Z DEBUG writing entry points to hermes_agent.egg-info/entry_points.txt
+kerja	langkah	2026-10-02T11:49:50.1548757Z DEBUG writing requirements to hermes_agent.egg-info/requires.txt
+kerja	langkah	2026-10-02T11:49:50.1549201Z DEBUG writing top-level names to hermes_agent.egg-info/top_level.txt
+kerja	langkah	2026-10-02T11:49:50.1549647Z DEBUG writing manifest file 'hermes_agent.egg-info/SOURCES.txt'
+kerja	langkah	2026-10-02T11:49:50.2047935Z DEBUG reading manifest file 'hermes_agent.egg-info/SOURCES.txt'
+kerja	langkah	2026-10-02T11:49:50.2048614Z DEBUG adding license file 'LICENSE'
+kerja	langkah	2026-10-02T11:49:50.2049168Z DEBUG writing manifest file 'hermes_agent.egg-info/SOURCES.txt'
+kerja	langkah	2026-10-02T11:49:50.2549367Z DEBUG Locking the source tree for setuptools
+kerja	langkah	2026-10-02T11:49:50.2550610Z DEBUG Calling `setuptools.build_meta.build_editable(__import__("os").fsdecode(b"/home/runner/.hermes/cache/uv/builds-v0/.tmpqZV1gy"), {}, None)`
+kerja	langkah	2026-10-02T11:49:50.4052957Z DEBUG running editable_wheel
+kerja	langkah	2026-10-02T11:49:50.4053765Z DEBUG creating /home/runner/.hermes/cache/uv/builds-v0/.tmpqZV1gy/.tmp-7hfxfpef/hermes_agent.egg-info
+kerja	langkah	2026-10-02T11:49:50.4054588Z DEBUG writing /home/runner/.hermes/cache/uv/builds-v0/.tmpqZV1gy/.tmp-7hfxfpef/hermes_agent.egg-info/PKG-INFO
+kerja	langkah	2026-10-02T11:49:50.4055420Z DEBUG writing dependency_links to /home/runner/.hermes/cache/uv/builds-v0/.tmpqZV1gy/.tmp-7hfxfpef/hermes_agent.egg-info/dependency_links.txt
+kerja	langkah	2026-10-02T11:49:50.4056326Z DEBUG writing entry points to /home/runner/.hermes/cache/uv/builds-v0/.tmpqZV1gy/.tmp-7hfxfpef/hermes_agent.egg-info/entry_points.txt
+kerja	langkah	2026-10-02T11:49:50.4057158Z DEBUG writing requirements to /home/runner/.hermes/cache/uv/builds-v0/.tmpqZV1gy/.tmp-7hfxfpef/hermes_agent.egg-info/requires.txt
+kerja	langkah	2026-10-02T11:49:50.4058341Z DEBUG writing top-level names to /home/runner/.hermes/cache/uv/builds-v0/.tmpqZV1gy/.tmp-7hfxfpef/hermes_agent.egg-info/top_level.txt
+kerja	langkah	2026-10-02T11:49:50.4059198Z DEBUG writing manifest file '/home/runner/.hermes/cache/uv/builds-v0/.tmpqZV1gy/.tmp-7hfxfpef/hermes_agent.egg-info/SOURCES.txt'
+kerja	langkah	2026-10-02T11:49:50.4555424Z DEBUG reading manifest file '/home/runner/.hermes/cache/uv/builds-v0/.tmpqZV1gy/.tmp-7hfxfpef/hermes_agent.egg-info/SOURCES.txt'
+kerja	langkah	2026-10-02T11:49:50.4556150Z DEBUG adding license file 'LICENSE'
+kerja	langkah	2026-10-02T11:49:50.4556753Z DEBUG writing manifest file '/home/runner/.hermes/cache/uv/builds-v0/.tmpqZV1gy/.tmp-7hfxfpef/hermes_agent.egg-info/SOURCES.txt'
+kerja	langkah	2026-10-02T11:49:50.4557818Z DEBUG creating '/home/runner/.hermes/cache/uv/builds-v0/.tmpqZV1gy/.tmp-7hfxfpef/hermes_agent-0.0.0.dist-info'
+kerja	langkah	2026-10-02T11:49:50.4558561Z DEBUG creating /home/runner/.hermes/cache/uv/builds-v0/.tmpqZV1gy/.tmp-7hfxfpef/hermes_agent-0.0.0.dist-info/WHEEL
+kerja	langkah	2026-10-02T11:49:50.4559070Z DEBUG running build_py
+kerja	langkah	2026-10-02T11:49:50.4559305Z DEBUG running egg_info
+kerja	langkah	2026-10-02T11:49:50.4559609Z DEBUG creating /tmp/tmpvgmj5vri.build-temp/hermes_agent.egg-info
+kerja	langkah	2026-10-02T11:49:50.5056628Z DEBUG writing /tmp/tmpvgmj5vri.build-temp/hermes_agent.egg-info/PKG-INFO
+kerja	langkah	2026-10-02T11:49:50.5057975Z DEBUG writing dependency_links to /tmp/tmpvgmj5vri.build-temp/hermes_agent.egg-info/dependency_links.txt
+kerja	langkah	2026-10-02T11:49:50.5058954Z DEBUG writing entry points to /tmp/tmpvgmj5vri.build-temp/hermes_agent.egg-info/entry_points.txt
+kerja	langkah	2026-10-02T11:49:50.5059840Z DEBUG writing requirements to /tmp/tmpvgmj5vri.build-temp/hermes_agent.egg-info/requires.txt
+kerja	langkah	2026-10-02T11:49:50.5061254Z DEBUG writing top-level names to /tmp/tmpvgmj5vri.build-temp/hermes_agent.egg-info/top_level.txt
+kerja	langkah	2026-10-02T11:49:50.5061912Z DEBUG writing manifest file '/tmp/tmpvgmj5vri.build-temp/hermes_agent.egg-info/SOURCES.txt'
+kerja	langkah	2026-10-02T11:49:50.5062529Z DEBUG reading manifest file '/tmp/tmpvgmj5vri.build-temp/hermes_agent.egg-info/SOURCES.txt'
+kerja	langkah	2026-10-02T11:49:50.5062976Z DEBUG adding license file 'LICENSE'
+kerja	langkah	2026-10-02T11:49:50.5558596Z DEBUG writing manifest file '/tmp/tmpvgmj5vri.build-temp/hermes_agent.egg-info/SOURCES.txt'
+kerja	langkah	2026-10-02T11:49:50.6060200Z DEBUG Editable install will be performed using a meta path finder.
+kerja	langkah	2026-10-02T11:49:50.6060848Z DEBUG 
+kerja	langkah	2026-10-02T11:49:50.6061290Z DEBUG Options like `package-data`, `include/exclude-package-data` or
+kerja	langkah	2026-10-02T11:49:50.6061736Z DEBUG `packages.find.exclude/include` may have no effect.
+kerja	langkah	2026-10-02T11:49:50.6062067Z DEBUG 
+kerja	langkah	2026-10-02T11:49:51.3580097Z DEBUG adding '__editable___hermes_agent_0_0_0_finder.py'
+kerja	langkah	2026-10-02T11:49:51.3580734Z DEBUG adding '__editable__.hermes_agent-0.0.0.pth'
+kerja	langkah	2026-10-02T11:49:51.3581704Z DEBUG creating '/home/runner/.hermes/cache/uv/builds-v0/.tmpqZV1gy/.tmp-7hfxfpef/hermes_agent-0.0.0-0.editable-py3-none-any.whl' and adding '/tmp/tmpo81bcsbghermes_agent-0.0.0-0.editable-py3-none-any.whl' to it
+kerja	langkah	2026-10-02T11:49:51.3582689Z DEBUG adding 'hermes_agent-0.0.0.dist-info/licenses/LICENSE'
+kerja	langkah	2026-10-02T11:49:51.3583177Z DEBUG adding 'hermes_agent-0.0.0.dist-info/METADATA'
+kerja	langkah	2026-10-02T11:49:51.3583526Z DEBUG adding 'hermes_agent-0.0.0.dist-info/WHEEL'
+kerja	langkah	2026-10-02T11:49:51.3583914Z DEBUG adding 'hermes_agent-0.0.0.dist-info/entry_points.txt'
+kerja	langkah	2026-10-02T11:49:51.3584322Z DEBUG adding 'hermes_agent-0.0.0.dist-info/top_level.txt'
+kerja	langkah	2026-10-02T11:49:51.3584678Z DEBUG adding 'hermes_agent-0.0.0.dist-info/RECORD'
+kerja	langkah	2026-10-02T11:49:51.3585789Z DEBUG /home/runner/.hermes/cache/uv/builds-v0/.tmpblzMk2/lib/python3.14/site-packages/setuptools/command/editable_wheel.py:352: InformationOnly: Editable installation.
+kerja	langkah	2026-10-02T11:49:51.3586766Z DEBUG !!
+kerja	langkah	2026-10-02T11:49:51.3587047Z DEBUG 
+kerja	langkah	2026-10-02T11:49:51.3587627Z DEBUG         ********************************************************************************
+kerja	langkah	2026-10-02T11:49:51.3588278Z DEBUG         Please be careful with folders in your working directory with the same
+kerja	langkah	2026-10-02T11:49:51.3588986Z DEBUG         name as your package as they may take precedence during imports.
+kerja	langkah	2026-10-02T11:49:51.3589671Z DEBUG         ********************************************************************************
+kerja	langkah	2026-10-02T11:49:51.3590172Z DEBUG 
+kerja	langkah	2026-10-02T11:49:51.3590474Z DEBUG !!
+kerja	langkah	2026-10-02T11:49:51.3590878Z DEBUG   with strategy, WheelFile(wheel_path, "w") as wheel_obj:
+kerja	langkah	2026-10-02T11:49:51.4099857Z       Built hermes-agent @ file:///home/runner/.hermes/installs/096885f0e90d3dd1/environments/a423f386a2bc4120b925ca18dd20d567/workspace
+kerja	langkah	2026-10-02T11:49:51.4121603Z Prepared 102 packages in 3.24s
+kerja	langkah	2026-10-02T11:49:51.5128430Z Installed 106 packages in 77ms
+kerja	langkah	2026-10-02T11:49:53.7192579Z Bytecode compiled 4265 files in 2.21s
+kerja	langkah	2026-10-02T11:49:53.7193166Z  + agent-client-protocol==0.9.0
+kerja	langkah	2026-10-02T11:49:53.7193568Z  + aiohappyeyeballs==2.7.1
+kerja	langkah	2026-10-02T11:49:53.7193880Z  + aiohttp==3.14.3
+kerja	langkah	2026-10-02T11:49:53.7194091Z  + aiosignal==1.4.0
+kerja	langkah	2026-10-02T11:49:53.7194372Z  + annotated-doc==0.0.5
+kerja	langkah	2026-10-02T11:49:53.7194723Z  + annotated-types==0.8.0
+kerja	langkah	2026-10-02T11:49:53.7195063Z  + anyio==4.14.2
+kerja	langkah	2026-10-02T11:49:53.7195360Z  + attrs==26.1.0
+kerja	langkah	2026-10-02T11:49:53.7195643Z  + browser-harness==0.1.13
+kerja	langkah	2026-10-02T11:49:53.7195991Z  + cdp-use==1.4.5
+kerja	langkah	2026-10-02T11:49:53.7196296Z  + certifi==2026.5.20
+kerja	langkah	2026-10-02T11:49:53.7196643Z  + cffi==2.1.1
+kerja	langkah	2026-10-02T11:49:53.7196977Z  + charset-normalizer==3.5.1
+kerja	langkah	2026-10-02T11:49:53.7197545Z  + click==8.4.2
+kerja	langkah	2026-10-02T11:49:53.7197849Z  + croniter==6.0.0
+kerja	langkah	2026-10-02T11:49:53.7198174Z  + cryptography==50.0.1
+kerja	langkah	2026-10-02T11:49:53.7198527Z  + defusedxml==0.7.1
+kerja	langkah	2026-10-02T11:49:53.7198842Z  + distro==1.9.0
+kerja	langkah	2026-10-02T11:49:53.7199140Z  + fastapi==0.133.1
+kerja	langkah	2026-10-02T11:49:53.7199443Z  + fetch-use==0.4.0
+kerja	langkah	2026-10-02T11:49:53.7200066Z  + fire==0.7.1
+kerja	langkah	2026-10-02T11:49:53.7200371Z  + firecrawl-anydoc==0.2.4
+kerja	langkah	2026-10-02T11:49:53.7200722Z  + frozenlist==1.8.0
+kerja	langkah	2026-10-02T11:49:53.7201042Z  + google-api-core==2.34.0
+kerja	langkah	2026-10-02T11:49:53.7201418Z  + google-api-python-client==2.194.0
+kerja	langkah	2026-10-02T11:49:53.7201833Z  + google-auth==2.55.1
+kerja	langkah	2026-10-02T11:49:53.7202182Z  + google-auth-httplib2==0.3.1
+kerja	langkah	2026-10-02T11:49:53.7202588Z  + google-auth-oauthlib==1.3.1
+kerja	langkah	2026-10-02T11:49:53.7202979Z  + googleapis-common-protos==1.75.1
+kerja	langkah	2026-10-02T11:49:53.7203369Z  + h11==0.16.0
+kerja	langkah	2026-10-02T11:49:53.7204431Z  + hermes-agent==0.0.0 (from file:///home/runner/.hermes/installs/096885f0e90d3dd1/environments/a423f386a2bc4120b925ca18dd20d567/workspace)
+kerja	langkah	2026-10-02T11:49:53.7205379Z  + httpcore==1.0.9
+kerja	langkah	2026-10-02T11:49:53.7205590Z  + httpcore2==2.7.0
+kerja	langkah	2026-10-02T11:49:53.7205839Z  + httplib2==0.32.0
+kerja	langkah	2026-10-02T11:49:53.7206039Z  + httptools==0.8.0
+kerja	langkah	2026-10-02T11:49:53.7206243Z  + httpx==0.28.1
+kerja	langkah	2026-10-02T11:49:53.7206445Z  + httpx2==2.7.0
+kerja	langkah	2026-10-02T11:49:53.7206647Z  + idna==3.19
+kerja	langkah	2026-10-02T11:49:53.7206859Z  + importlib-metadata==8.7.1
+kerja	langkah	2026-10-02T11:49:53.7207095Z  + jinja2==3.1.6
+kerja	langkah	2026-10-02T11:49:53.7207622Z  + jiter==0.16.0
+kerja	langkah	2026-10-02T11:49:53.7207852Z  + jsonschema==4.26.0
+kerja	langkah	2026-10-02T11:49:53.7208095Z  + jsonschema-specifications==2025.9.1
+kerja	langkah	2026-10-02T11:49:53.7208369Z  + markdown==3.10.2
+kerja	langkah	2026-10-02T11:49:53.7208585Z  + markdown-it-py==4.2.0
+kerja	langkah	2026-10-02T11:49:53.7208815Z  + markupsafe==3.0.3
+kerja	langkah	2026-10-02T11:49:53.7209032Z  + mcp==2.0.0
+kerja	langkah	2026-10-02T11:49:53.7209243Z  + mcp-types==2.0.0
+kerja	langkah	2026-10-02T11:49:53.7209442Z  + mdurl==0.1.2
+kerja	langkah	2026-10-02T11:49:53.7209652Z  + multidict==6.7.1
+kerja	langkah	2026-10-02T11:49:53.7209853Z  + nemo-relay==0.9.3
+kerja	langkah	2026-10-02T11:49:53.7210064Z  + oauthlib==3.3.1
+kerja	langkah	2026-10-02T11:49:53.7210272Z  + openai==2.24.0
+kerja	langkah	2026-10-02T11:49:53.7210494Z  + opentelemetry-api==1.39.1
+kerja	langkah	2026-10-02T11:49:53.7210731Z  + packaging==26.0
+kerja	langkah	2026-10-02T11:49:53.7210934Z  + pathspec==1.1.1
+kerja	langkah	2026-10-02T11:49:53.7211136Z  + pillow==12.3.0
+kerja	langkah	2026-10-02T11:49:53.7211342Z  + pillow-heif==1.6.0
+kerja	langkah	2026-10-02T11:49:53.7211575Z  + prompt-toolkit==3.0.52
+kerja	langkah	2026-10-02T11:49:53.7211811Z  + propcache==0.5.2
+kerja	langkah	2026-10-02T11:49:53.7212026Z  + proto-plus==1.28.3
+kerja	langkah	2026-10-02T11:49:53.7212234Z  + protobuf==6.33.6
+kerja	langkah	2026-10-02T11:49:53.7212451Z  + psutil==7.2.2
+kerja	langkah	2026-10-02T11:49:53.7212665Z  + ptyprocess==0.7.0
+kerja	langkah	2026-10-02T11:49:53.7212891Z  + pyasn1==0.6.4
+kerja	langkah	2026-10-02T11:49:53.7213226Z  + pyasn1-modules==0.4.2
+kerja	langkah	2026-10-02T11:49:53.7213457Z  + pycparser==3.0
+kerja	langkah	2026-10-02T11:49:53.7213664Z  + pydantic==2.13.4
+kerja	langkah	2026-10-02T11:49:53.7213883Z  + pydantic-core==2.46.4
+kerja	langkah	2026-10-02T11:49:53.7214110Z  + pygments==2.21.0
+kerja	langkah	2026-10-02T11:49:53.7214306Z  + pyjwt==2.13.0
+kerja	langkah	2026-10-02T11:49:53.7214512Z  + pyparsing==3.3.2
+kerja	langkah	2026-10-02T11:49:53.7214732Z  + python-dateutil==2.9.0.post0
+kerja	langkah	2026-10-02T11:49:53.7214988Z  + python-dotenv==1.2.2
+kerja	langkah	2026-10-02T11:49:53.7215222Z  + python-multipart==0.0.32
+kerja	langkah	2026-10-02T11:49:53.7215462Z  + pytz==2026.3.post1
+kerja	langkah	2026-10-02T11:49:53.7215695Z  + referencing==0.37.0
+kerja	langkah	2026-10-02T11:49:53.7215912Z  + requests==2.33.0
+kerja	langkah	2026-10-02T11:49:53.7216125Z  + requests-oauthlib==2.0.0
+kerja	langkah	2026-10-02T11:49:53.7216489Z  + resvg-py==0.4.0
+kerja	langkah	2026-10-02T11:49:53.7216692Z  + rich==14.3.3
+kerja	langkah	2026-10-02T11:49:53.7216902Z  + rpds-py==2026.6.3
+kerja	langkah	2026-10-02T11:49:53.7217125Z  + ruamel-yaml==0.18.16
+kerja	langkah	2026-10-02T11:49:53.7217568Z  + six==1.17.0
+kerja	langkah	2026-10-02T11:49:53.7217771Z  + sniffio==1.3.1
+kerja	langkah	2026-10-02T11:49:53.7217991Z  + snowballstemmer==3.1.1
+kerja	langkah	2026-10-02T11:49:53.7218222Z  + socksio==1.0.0
+kerja	langkah	2026-10-02T11:49:53.7218421Z  + sse-starlette==3.4.8
+kerja	langkah	2026-10-02T11:49:53.7218630Z  + starlette==1.3.1
+kerja	langkah	2026-10-02T11:49:53.7218846Z  + tenacity==9.1.4
+kerja	langkah	2026-10-02T11:49:53.7219047Z  + termcolor==3.3.0
+kerja	langkah	2026-10-02T11:49:53.7219257Z  + tomli-w==1.2.0
+kerja	langkah	2026-10-02T11:49:53.7219446Z  + tqdm==4.70.0
+kerja	langkah	2026-10-02T11:49:53.7219647Z  + truststore==0.10.4
+kerja	langkah	2026-10-02T11:49:53.7219880Z  + typing-extensions==4.16.0
+kerja	langkah	2026-10-02T11:49:53.7220136Z  + typing-inspection==0.4.4
+kerja	langkah	2026-10-02T11:49:53.7220375Z  + uritemplate==4.2.0
+kerja	langkah	2026-10-02T11:49:53.7220591Z  + urllib3==2.7.0
+kerja	langkah	2026-10-02T11:49:53.7220993Z  + uvicorn==0.41.0
+kerja	langkah	2026-10-02T11:49:53.7221201Z  + uvloop==0.22.1
+kerja	langkah	2026-10-02T11:49:53.7221401Z  + watchfiles==1.2.0
+kerja	langkah	2026-10-02T11:49:53.7221617Z  + wcwidth==0.8.2
+kerja	langkah	2026-10-02T11:49:53.7221834Z  + websockets==15.0.1
+kerja	langkah	2026-10-02T11:49:53.7222045Z  + yarl==1.24.5
+kerja	langkah	2026-10-02T11:49:53.7222268Z  + youtube-transcript-api==1.2.4
+kerja	langkah	2026-10-02T11:49:53.7222521Z  + zipp==4.1.0
+kerja	langkah	2026-10-02T11:49:53.8206378Z Using Python 3.14.7 environment at: venv
+kerja	langkah	2026-10-02T11:49:53.8206967Z Checked 106 packages in 49ms
+kerja	langkah	2026-10-02T11:49:53.8207575Z All installed packages are compatible
+kerja	langkah	2026-10-02T11:49:56.6341901Z ✓ venv
+kerja	langkah	2026-10-02T11:49:56.6774418Z ✓ dependencies installed
+kerja	langkah	2026-10-02T11:49:56.6842095Z ✓ config prepared in /home/runner/.hermes
+kerja	langkah	2026-10-02T11:49:56.6996900Z ✓ uv ready (uv 0.12.3 (x86_64-unknown-linux-gnu))
+kerja	langkah	2026-10-02T11:49:56.7138064Z → Building the hermes command and apps
+kerja	langkah	2026-10-02T11:50:00.7774988Z Preparing the isolated Hermes runtime…
+kerja	langkah	2026-10-02T11:50:00.8297575Z Using CPython 3.14.7 interpreter at: /home/runner/.hermes/tools/python-3.14.7+20260901-linux-x64/bin/python3
+kerja	langkah	2026-10-02T11:50:00.8298316Z Creating virtual environment at: a2a916d00d9e4105ab712063c919b259
+kerja	langkah	2026-10-02T11:50:00.8298763Z Activate with: a2a916d00d9e4105ab712063c919b259/bin/activate
+kerja	langkah	2026-10-02T11:50:00.8809354Z Resolved 5 packages in 0.62ms
+kerja	langkah	2026-10-02T11:50:00.9336414Z Installed 4 packages in 2ms
+kerja	langkah	2026-10-02T11:50:01.0330571Z Bytecode compiled 57 files in 113ms
+kerja	langkah	2026-10-02T11:50:01.0330968Z  + packaging==26.0
+kerja	langkah	2026-10-02T11:50:01.0331205Z  + ruamel-yaml==0.18.16
+kerja	langkah	2026-10-02T11:50:01.0331441Z  + tomli-w==1.2.0
+kerja	langkah	2026-10-02T11:50:01.0331695Z  + truststore==0.10.4
+kerja	langkah	2026-10-02T11:50:01.7852047Z   → Preparing Node dependencies…
+kerja	langkah	2026-10-02T11:50:01.8773839Z node-deps: installing workspace dependencies with npm ci (ui-tui, web)...
+kerja	langkah	2026-10-02T11:50:11.3267170Z npm notice run hermes-agent@1.0.0 postinstall
+kerja	langkah	2026-10-02T11:50:11.3272575Z npm notice run echo '✅ Node dependencies installed. Run: python run_agent.py --help'
+kerja	langkah	2026-10-02T11:50:11.3354618Z ✅ Node dependencies installed. Run: python run_agent.py --help
+kerja	langkah	2026-10-02T11:50:12.3713732Z 
+kerja	langkah	2026-10-02T11:50:12.3714344Z added 554 packages in 10s
+kerja	langkah	2026-10-02T11:50:12.4970469Z   → Building the TUI…
+kerja	langkah	2026-10-02T11:50:12.7352144Z 
+kerja	langkah	2026-10-02T11:50:12.7353166Z   ...../tmp/hermes-tui-AcuyTW/.tui-build-csYGJx/product/dist/entry.js  3.7mb ⚠️
+kerja	langkah	2026-10-02T11:50:12.7353544Z 
+kerja	langkah	2026-10-02T11:50:12.7733952Z ⚡ Done in 170ms
+kerja	langkah	2026-10-02T11:50:12.7734385Z built /home/runner/.hermes/hermes-agent/ui-tui/dist/entry.js
+kerja	langkah	2026-10-02T11:50:12.8233079Z   → Building the web UI…
+kerja	langkah	2026-10-02T11:50:21.7326969Z [36mvite v8.2.0 [32mbuilding client environment for production...[36m[39m
+kerja	langkah	2026-10-02T11:50:21.7461425Z [2K
+kerja	langkah	2026-10-02T11:50:26.3226311Z transforming...✓ 2252 modules transformed.
+kerja	langkah	2026-10-02T11:50:26.4336247Z rendering chunks...
+kerja	langkah	2026-10-02T11:50:26.5538842Z computing gzip size...
+kerja	langkah	2026-10-02T11:50:26.5687128Z hermes_cli/.web_dist-build-lPIARZ/product/index.html                                       1.50 kB │ gzip:   0.54 kB
+kerja	langkah	2026-10-02T11:50:26.5688153Z hermes_cli/.web_dist-build-lPIARZ/product/assets/Mondwest-Regular-CWscgue7.woff2          23.82 kB
+kerja	langkah	2026-10-02T11:50:26.5688893Z hermes_cli/.web_dist-build-lPIARZ/product/assets/RulesExpanded-Regular-l8uVympt.woff2     33.82 kB
+kerja	langkah	2026-10-02T11:50:26.5689602Z hermes_cli/.web_dist-build-lPIARZ/product/assets/RulesExpanded-Bold-DZA7s8Pa.woff2        35.01 kB
+kerja	langkah	2026-10-02T11:50:26.5690241Z hermes_cli/.web_dist-build-lPIARZ/product/assets/RulesCompressed-Regular-BSXFyF4x.woff2   37.76 kB
+kerja	langkah	2026-10-02T11:50:26.5690900Z hermes_cli/.web_dist-build-lPIARZ/product/assets/RulesCompressed-Medium-CA76_CrB.woff2    38.84 kB
+kerja	langkah	2026-10-02T11:50:26.5691562Z hermes_cli/.web_dist-build-lPIARZ/product/assets/Collapse-Bold-mgICk9-_.woff2             59.14 kB
+kerja	langkah	2026-10-02T11:50:26.5692190Z hermes_cli/.web_dist-build-lPIARZ/product/assets/Collapse-Regular-DysayoTY.woff2          62.81 kB
+kerja	langkah	2026-10-02T11:50:26.5692995Z hermes_cli/.web_dist-build-lPIARZ/product/assets/xterm-BrP-ENHg.css                        3.93 kB │ gzip:   1.01 kB
+kerja	langkah	2026-10-02T11:50:26.5694549Z hermes_cli/.web_dist-build-lPIARZ/product/assets/index-w1cyU43f.css                      112.63 kB │ gzip:  17.62 kB
+kerja	langkah	2026-10-02T11:50:26.5695390Z hermes_cli/.web_dist-build-lPIARZ/product/assets/chat-activation-BiaqYo9D.js               0.04 kB │ gzip:   0.06 kB
+kerja	langkah	2026-10-02T11:50:26.5696225Z hermes_cli/.web_dist-build-lPIARZ/product/assets/page-header-context-Cv8A-rTa.js           0.15 kB │ gzip:   0.14 kB
+kerja	langkah	2026-10-02T11:50:26.5697046Z hermes_cli/.web_dist-build-lPIARZ/product/assets/useProfileScope-CZ2qacRL.js               0.26 kB │ gzip:   0.21 kB
+kerja	langkah	2026-10-02T11:50:26.5698764Z hermes_cli/.web_dist-build-lPIARZ/product/assets/usePageHeader-BtGwRGnc.js                 0.30 kB │ gzip:   0.23 kB
+kerja	langkah	2026-10-02T11:50:26.5699977Z hermes_cli/.web_dist-build-lPIARZ/product/assets/utils-DYyongUp.js                         0.53 kB │ gzip:   0.29 kB
+kerja	langkah	2026-10-02T11:50:26.5701161Z hermes_cli/.web_dist-build-lPIARZ/product/assets/rolldown-runtime-CbXtAM7H.js              0.58 kB │ gzip:   0.36 kB
+kerja	langkah	2026-10-02T11:50:26.5702024Z hermes_cli/.web_dist-build-lPIARZ/product/assets/DeleteConfirmDialog-B05PEZx2.js           0.61 kB │ gzip:   0.38 kB
+kerja	langkah	2026-10-02T11:50:26.5702849Z hermes_cli/.web_dist-build-lPIARZ/product/assets/useModalBehavior-oWox1GPh.js              0.62 kB │ gzip:   0.39 kB
+kerja	langkah	2026-10-02T11:50:26.5703655Z hermes_cli/.web_dist-build-lPIARZ/product/assets/clipboard-owkvc3zk.js                     0.73 kB │ gzip:   0.44 kB
+kerja	langkah	2026-10-02T11:50:26.5705093Z hermes_cli/.web_dist-build-lPIARZ/product/assets/terminal-font-refit-Dmois6_8.js           0.83 kB │ gzip:   0.44 kB
+kerja	langkah	2026-10-02T11:50:26.5706303Z hermes_cli/.web_dist-build-lPIARZ/product/assets/mcp-server-create-B0VgoYzF.js             0.92 kB │ gzip:   0.46 kB
+kerja	langkah	2026-10-02T11:50:26.5707154Z hermes_cli/.web_dist-build-lPIARZ/product/assets/LoadErrorNotice-DJbOeDgn.js               1.74 kB │ gzip:   0.90 kB
+kerja	langkah	2026-10-02T11:50:26.5708186Z hermes_cli/.web_dist-build-lPIARZ/product/assets/DocsPage-DQtRrRxZ.js                      1.96 kB │ gzip:   1.08 kB
+kerja	langkah	2026-10-02T11:50:26.5709019Z hermes_cli/.web_dist-build-lPIARZ/product/assets/PairingPage-BQ7bQXr4.js                   4.88 kB │ gzip:   1.67 kB
+kerja	langkah	2026-10-02T11:50:26.5709847Z hermes_cli/.web_dist-build-lPIARZ/product/assets/plugins-BLrdVQnC.js                       5.55 kB │ gzip:   2.61 kB
+kerja	langkah	2026-10-02T11:50:26.5710645Z hermes_cli/.web_dist-build-lPIARZ/product/assets/LogsPage-CcTLs0Kl.js                      7.50 kB │ gzip:   3.29 kB
+kerja	langkah	2026-10-02T11:50:26.5711449Z hermes_cli/.web_dist-build-lPIARZ/product/assets/FilesPage-BB-LHYBq.js                     9.81 kB │ gzip:   3.26 kB
+kerja	langkah	2026-10-02T11:50:26.5712260Z hermes_cli/.web_dist-build-lPIARZ/product/assets/WebhooksPage-BrpsVoIR.js                 12.59 kB │ gzip:   3.85 kB
+kerja	langkah	2026-10-02T11:50:26.5713087Z hermes_cli/.web_dist-build-lPIARZ/product/assets/themes-DY6KKwLN.js                       12.99 kB │ gzip:   4.39 kB
+kerja	langkah	2026-10-02T11:50:26.5713905Z hermes_cli/.web_dist-build-lPIARZ/product/assets/ModelReloadConfirm-BJmbjcmb.js           13.95 kB │ gzip:   5.15 kB
+kerja	langkah	2026-10-02T11:50:26.5714778Z hermes_cli/.web_dist-build-lPIARZ/product/assets/ProfileBuilderPage-BhtmavLP.js           14.87 kB │ gzip:   4.50 kB
+kerja	langkah	2026-10-02T11:50:26.5715602Z hermes_cli/.web_dist-build-lPIARZ/product/assets/McpPage-CKeNzIOu.js                      17.82 kB │ gzip:   5.22 kB
+kerja	langkah	2026-10-02T11:50:26.5716402Z hermes_cli/.web_dist-build-lPIARZ/product/assets/ConfigPage-DSuMUumt.js                   18.00 kB │ gzip:   6.02 kB
+kerja	langkah	2026-10-02T11:50:26.5717209Z hermes_cli/.web_dist-build-lPIARZ/product/assets/AnalyticsPage-hmUfObUW.js                20.17 kB │ gzip:   6.04 kB
+kerja	langkah	2026-10-02T11:50:26.5718233Z hermes_cli/.web_dist-build-lPIARZ/product/assets/ProfilesPage-j8qiyeTA.js                 25.27 kB │ gzip:   7.11 kB
+kerja	langkah	2026-10-02T11:50:26.5719072Z hermes_cli/.web_dist-build-lPIARZ/product/assets/ChannelsPage-DUlptx0c.js                 29.19 kB │ gzip:   8.10 kB
+kerja	langkah	2026-10-02T11:50:26.5719892Z hermes_cli/.web_dist-build-lPIARZ/product/assets/EnvPage-BwB9ceUH.js                      29.76 kB │ gzip:   7.96 kB
+kerja	langkah	2026-10-02T11:50:26.5721177Z hermes_cli/.web_dist-build-lPIARZ/product/assets/ModelsPage-DJ8xAukE.js                   33.98 kB │ gzip:  10.52 kB
+kerja	langkah	2026-10-02T11:50:26.5721975Z hermes_cli/.web_dist-build-lPIARZ/product/assets/PluginsPage-fhPg2HMY.js                  34.08 kB │ gzip:   9.91 kB
+kerja	langkah	2026-10-02T11:50:26.5722778Z hermes_cli/.web_dist-build-lPIARZ/product/assets/SystemPage-CsAWuhcx.js                   43.11 kB │ gzip:  11.63 kB
+kerja	langkah	2026-10-02T11:50:26.5723563Z hermes_cli/.web_dist-build-lPIARZ/product/assets/SkillsPage-6sFaseSc.js                   44.70 kB │ gzip:  12.63 kB
+kerja	langkah	2026-10-02T11:50:26.5724495Z hermes_cli/.web_dist-build-lPIARZ/product/assets/CronPage-koW4W1Mt.js                     45.43 kB │ gzip:  14.67 kB
+kerja	langkah	2026-10-02T11:50:26.5725291Z hermes_cli/.web_dist-build-lPIARZ/product/assets/SessionsPage-Bqaz1q2P.js                 46.65 kB │ gzip:  14.26 kB
+kerja	langkah	2026-10-02T11:50:26.5726078Z hermes_cli/.web_dist-build-lPIARZ/product/assets/api-oPmOkUCd.js                          48.67 kB │ gzip:  12.53 kB
+kerja	langkah	2026-10-02T11:50:26.5726858Z hermes_cli/.web_dist-build-lPIARZ/product/assets/vendor-C3j-S1CW.js                       50.37 kB │ gzip:  17.89 kB
+kerja	langkah	2026-10-02T11:50:26.5727767Z hermes_cli/.web_dist-build-lPIARZ/product/assets/ChatPage-C95Y5X9N.js                     52.81 kB │ gzip:  18.45 kB
+kerja	langkah	2026-10-02T11:50:26.5728556Z hermes_cli/.web_dist-build-lPIARZ/product/assets/index-LQnwqbgq.js                        71.84 kB │ gzip:  24.62 kB
+kerja	langkah	2026-10-02T11:50:26.5729349Z hermes_cli/.web_dist-build-lPIARZ/product/assets/react-vendor-BoVnYuL4.js                226.99 kB │ gzip:  72.78 kB
+kerja	langkah	2026-10-02T11:50:26.5730134Z hermes_cli/.web_dist-build-lPIARZ/product/assets/ui-bBVPPEcD.js                          290.19 kB │ gzip:  94.89 kB
+kerja	langkah	2026-10-02T11:50:26.5730902Z hermes_cli/.web_dist-build-lPIARZ/product/assets/xterm-CXxU4Y2B.js                       474.38 kB │ gzip: 122.64 kB
+kerja	langkah	2026-10-02T11:50:26.5731689Z hermes_cli/.web_dist-build-lPIARZ/product/assets/i18n-DHCrxiuS.js                        490.88 kB │ gzip: 145.49 kB
+kerja	langkah	2026-10-02T11:50:26.5732096Z 
+kerja	langkah	2026-10-02T11:50:26.5732521Z [33m[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+kerja	langkah	2026-10-02T11:50:26.5732996Z   - @rolldown/plugin-babel (90%)
+kerja	langkah	2026-10-02T11:50:26.5733289Z   - @tailwindcss/vite:generate:build (4%)
+kerja	langkah	2026-10-02T11:50:26.5733790Z See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
+kerja	langkah	2026-10-02T11:50:26.5734269Z [39m
+kerja	langkah	2026-10-02T11:50:26.5734519Z [32m✓ built in 4.84s[39m
+kerja	langkah	2026-10-02T11:50:26.5898543Z built /home/runner/.hermes/hermes-agent/hermes_cli/web_dist/index.html
+kerja	langkah	2026-10-02T11:50:27.3766233Z   ✓ Model catalog cache refreshed from checkout
+kerja	langkah	2026-10-02T11:50:27.3832794Z 
+kerja	langkah	2026-10-02T11:50:27.3833111Z → Syncing bundled skills...
+kerja	langkah	2026-10-02T11:50:27.5374685Z   + 58 new: xurl, llm-wiki, arxiv, grounded-citations, competitor-news-monitor, songwriting-and-ai-music, baoyu-infographic, popular-web-designs, claude-design, design-md, p5js, manim-video, ascii-video, architecture-diagram, humanizer, youtube-content, gif-search, songsee, hermes-agent, opencode, claude-code, computer-use, codex, github, simplify-code, hermes-agent-skill-authoring, codebase-inspection, inspecting-hermes-desktop-dom, dogfood, requesting-code-review, test-driven-development, systematic-debugging, node-inspect-debugger, spike, python-debugpy, sdlc-review, notion, weekly-review-planning, maps, google-workspace, meeting-action-items, teams-meeting-pipeline, box, document-to-action-items, docx, product-price-monitor, powerpoint, xlsx, pdf, airtable, apple-notes, apple-reminders, imessage, findmy, himalaya, email-inbox-triage, blocked-page-recovery, obsidian
+kerja	langkah	2026-10-02T11:50:27.5929225Z 
+kerja	langkah	2026-10-02T11:50:27.5930032Z → Syncing bundled skills to all profiles...
+kerja	langkah	2026-10-02T11:50:27.8025281Z   default: up to date
+kerja	langkah	2026-10-02T11:50:27.8127218Z 
+kerja	langkah	2026-10-02T11:50:27.8127909Z → Checking configuration for new options...
+kerja	langkah	2026-10-02T11:50:27.8595768Z   ✓ Configuration is up to date
+kerja	langkah	2026-10-02T11:50:27.8597342Z 
+kerja	langkah	2026-10-02T11:50:27.8950714Z ✓ Install complete! [main @ 2f80ae0a6]
+kerja	langkah	2026-10-02T11:50:28.0862970Z 
+kerja	langkah	2026-10-02T11:50:28.0863795Z ℹ Skill curator
+kerja	langkah	2026-10-02T11:50:28.0864634Z   Background skill maintenance is enabled. First pass is deferred ~7d after installation; only agent-created skills are in scope and nothing is ever auto-deleted (archive is recoverable).
+kerja	langkah	2026-10-02T11:50:28.0865435Z   Preview now:  hermes curator run --dry-run
+kerja	langkah	2026-10-02T11:50:28.0865752Z   Pause it:     hermes curator pause
+kerja	langkah	2026-10-02T11:50:28.0866211Z   Docs:         https://hermes-agent.nousresearch.com/docs/user-guide/features/curator
+kerja	langkah	2026-10-02T11:50:28.4345124Z ✓ added ~/.local/bin to PATH in /home/runner/.bashrc
+kerja	langkah	2026-10-02T11:50:28.4409021Z ✓ added ~/.local/bin to PATH in /home/runner/.bash_profile
+kerja	langkah	2026-10-02T11:50:28.4409774Z ✓ app products and hermes command ready
+kerja	langkah	2026-10-02T11:50:28.4480813Z ✓ Hermes Agent install complete. Run: hermes
+kerja	langkah	2026-10-02T11:50:28.4487379Z == jalankan ==
+kerja	langkah	2026-10-02T11:50:29.5929956Z Hermes Agent v0.21.5+5774.g2f80ae0 (2026.9.24) · upstream 2f80ae0a
+kerja	langkah	2026-10-02T11:50:29.5930515Z Install directory: /home/runner/.hermes/hermes-agent
+kerja	langkah	2026-10-02T11:50:29.5930834Z Install method: git
+kerja	langkah	2026-10-02T11:50:29.5931058Z Python: 3.14.7
+kerja	langkah	2026-10-02T11:50:29.5931275Z OpenAI SDK: 2.24.0
+kerja	langkah	2026-10-02T11:50:29.5931486Z Up to date
+kerja	langkah	2026-10-02T11:50:29.6241483Z == tanya sekali (tanpa kunci provider) ==
+kerja	langkah	2026-10-02T11:50:34.2006663Z Hermes is not connected to any AI provider yet. Run `hermes model` to pick one (the free Nous tier needs no API key), type `/login` in chat, or add a key with `hermes auth add <provider>`. (Advanced: put an API key such as OPENROUTER_API_KEY in ~/.hermes/.env.)
+kerja	langkah	2026-10-02T11:50:34.7170523Z GAGAL-DI-HARAPKAN:1
+kerja	langkah	2026-10-02T11:50:34.7171023Z == selesai ==
+kerja	Post Run actions/checkout@v4	﻿2026-10-02T11:50:34.7298283Z Post job cleanup.
+kerja	Post Run actions/checkout@v4	2026-10-02T11:50:34.8147920Z [command]/usr/bin/git version
+kerja	Post Run actions/checkout@v4	2026-10-02T11:50:34.8190455Z git version 2.55.0
+kerja	Post Run actions/checkout@v4	2026-10-02T11:50:34.8225594Z Temporarily overriding HOME='/home/runner/work/_temp/2c983c77-0955-4a66-a104-fd4d8dd8de3f' before making global git config changes
+kerja	Post Run actions/checkout@v4	2026-10-02T11:50:34.8226902Z Adding repository directory to the temporary git global config as a safe directory
+kerja	Post Run actions/checkout@v4	2026-10-02T11:50:34.8230107Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/uji-ci/uji-ci
+kerja	Post Run actions/checkout@v4	2026-10-02T11:50:34.8269326Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+kerja	Post Run actions/checkout@v4	2026-10-02T11:50:34.8304239Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+kerja	Post Run actions/checkout@v4	2026-10-02T11:50:34.8582428Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+kerja	Post Run actions/checkout@v4	2026-10-02T11:50:34.8610853Z http.https://github.com/.extraheader
+kerja	Post Run actions/checkout@v4	2026-10-02T11:50:34.8621600Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+kerja	Post Run actions/checkout@v4	2026-10-02T11:50:34.8660209Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+kerja	Post Run actions/checkout@v4	2026-10-02T11:50:34.8929871Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+kerja	Post Run actions/checkout@v4	2026-10-02T11:50:34.8975757Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+kerja	Complete job	﻿2026-10-02T11:50:34.9380676Z Cleaning up orphan processes
+kerja	Complete job	2026-10-02T11:50:34.9755475Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

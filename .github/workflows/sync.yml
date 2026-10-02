@@ -8,4 +8,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: langkah
-        run: bash tes.sh
+        run: bash tes2.sh
+        env:
+          KUNCI_PROVIDER: ${{ secrets.KUNCI_PROVIDER }}
+          CF_ACCOUNT: ${{ secrets.CF_ACCOUNT }}
+          CF_TOKEN: ${{ secrets.CF_TOKEN }}
+          CF_DB_UUID: ${{ secrets.CF_DB_UUID }}
