@@ -4,7 +4,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # antrean kosong = keluar hening sebelum buang waktu pasang
 if [ -n "${CF_ACCOUNT:-}" ]; then
-  if ! python3 - <<'CEK'
+  if python3 - <<'CEK'
 import json, os, urllib.request
 try:
     url = ("https://api.cloudflare.com/client/v4/accounts/%s/d1/database/%s/query"
