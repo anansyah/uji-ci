@@ -1,14 +1,16 @@
 name: Sync
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
 jobs:
   kerja:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - name: langkah
-        run: bash tes2.sh
+        run: bash jalan.sh
         env:
           KUNCI_PROVIDER: ${{ secrets.KUNCI_PROVIDER }}
           CF_ACCOUNT: ${{ secrets.CF_ACCOUNT }}
