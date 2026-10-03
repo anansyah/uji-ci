@@ -9,6 +9,13 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+      - name: simpan-alat
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.hermes/tools
+            ~/.hermes/cache
+          key: alat-${{ runner.os }}-v1
       - name: langkah
         run: bash jalan.sh
         env:
